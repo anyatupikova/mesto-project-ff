@@ -65,6 +65,8 @@ addListener(popupTypeImage);
 editButton.addEventListener('click', (evt) => {
   if (evt.target === editButton) {
     openModal(popupEdit);
+    nameInput.value = profileTitle.textContent;
+    jobInput.value = profileDescription.textContent; 
   }
 });
 
