@@ -10,11 +10,6 @@ export const openModal = (modal) => {
   overlay.classList.add('overlay-opened');
   modal.classList.add('popup_is-animated');
   document.addEventListener('keydown', handleEscKeyUp);
-  
-  const popupNewCard = document.querySelector('.popup_type_new-card');
-  const submitButtonSelector = popupNewCard.querySelector('.popup__button');
-  submitButtonSelector.disabled = true;
-  submitButtonSelector.classList.add('popup__button_disabled');
 };
 
 export const closeModal = (modal) => {

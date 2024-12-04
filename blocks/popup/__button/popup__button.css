@@ -24,6 +24,7 @@
   color: rgba(0, 0, 0, 0.15);
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: default;
 }
 
 @media screen and (max-width: 568px) {
