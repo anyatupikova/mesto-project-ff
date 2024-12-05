@@ -119,12 +119,18 @@ addListener(popupNewCard);
 addListener(popupTypeImage);
 addListener(popupEditAvatar);
 
+const inactiveButtonSubmit = (button, classButton) => {
+  button.disabled = true;
+  button.classList.add(classButton);
+}
+
 // слушатель открытия popupEdit
 editButton.addEventListener('click', () => {
   openModal(popupEdit);
   nameInput.value = profileTitle.textContent;
   jobInput.value = profileDescription.textContent;
   clearValidation(popupEdit, validationConfig);
+  inactiveButtonSubmit(buttonSubmitPopupEdit, validationConfig.inactiveButtonClass);
 });
 
 // слушатель открытия popupNewCard
@@ -132,6 +138,7 @@ addButton.addEventListener('click', () => {
   openModal(popupNewCard);
   popupNewCardForm.reset();
   clearValidation(popupNewCard, validationConfig);
+  inactiveButtonSubmit(buttonSubmitPopupNewCard, validationConfig.inactiveButtonClass);
 });
 
 // слушатель открытия popupEditAvatar
@@ -139,6 +146,7 @@ profileImage.addEventListener('click', () => {
   openModal(popupEditAvatar);
   popupEditAvatarForm.reset();
   clearValidation(popupEditAvatar, validationConfig);
+  inactiveButtonSubmit(buttonSubmitPopupEditAvatar, validationConfig.inactiveButtonClass);
 });
 
 //редактирование аватара

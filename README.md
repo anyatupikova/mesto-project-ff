@@ -1,6 +1,6 @@
 # Проектная работа Mesto
 git@github.com:anyatupikova/mesto-project-ff.git
-https://github.com/anyatupikova/mesto-project-ff.git
+https://anyatupikova.github.io/mesto-project-ff/
 ------------------------------------------------------
 
 # Описание
